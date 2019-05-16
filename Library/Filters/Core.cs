@@ -101,6 +101,7 @@ namespace DeninaSharp.Core.Filters
         }
 
         [Filter("Label", "A placeholder filter for a label. Simply passes text through.")]
+        [ArgumentMeta("label", true, "The name of this label.")]
         public static string Pass(string input, PipelineCommand command, ExecutionLog log)
         {
             return input;
